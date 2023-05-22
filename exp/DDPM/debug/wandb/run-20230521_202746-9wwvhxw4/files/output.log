@@ -1,0 +1,114 @@
+train ddpm:   0%|                                                                                                                     | 0/50 [00:00<?, ?it/s]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+train ddpm:   2%|█▌                                                                               | 1/50 [01:11<58:31, 71.67s/it, [TRAIN] EP: 0 Loss: 47.077]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Traceback (most recent call last):
+  File "/home/gaozelin/diffusion/run.py", line 46, in <module>
+    ddpm_optim.step()
+  File "/home/gaozelin/miniconda3/envs/torch_diff/lib/python3.9/site-packages/torch/optim/lr_scheduler.py", line 65, in wrapper
+    return wrapped(*args, **kwargs)
+  File "/home/gaozelin/miniconda3/envs/torch_diff/lib/python3.9/site-packages/torch/optim/optimizer.py", line 113, in wrapper
+    return func(*args, **kwargs)
+  File "/home/gaozelin/miniconda3/envs/torch_diff/lib/python3.9/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/gaozelin/miniconda3/envs/torch_diff/lib/python3.9/site-packages/torch/optim/adamw.py", line 161, in step
+    adamw(params_with_grad,
+  File "/home/gaozelin/miniconda3/envs/torch_diff/lib/python3.9/site-packages/torch/optim/adamw.py", line 218, in adamw
+    func(params,
+  File "/home/gaozelin/miniconda3/envs/torch_diff/lib/python3.9/site-packages/torch/optim/adamw.py", line 311, in _single_tensor_adamw
+    param.addcdiv_(exp_avg, denom, value=-step_size)
+KeyboardInterrupt
